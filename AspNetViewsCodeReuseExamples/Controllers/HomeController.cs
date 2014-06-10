@@ -16,5 +16,9 @@ namespace AspNetViewsCodeReuseExamples.Controllers
             return View();
         }
 
+        public ActionResult HtmlHelper()
+        {
+            return View();
+        }
     }
 }

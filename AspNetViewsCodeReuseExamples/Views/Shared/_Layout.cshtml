@@ -3,12 +3,24 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    <title>Code Reuse in ASP.NET Views - Examples</title>
     @Styles.Render("~/Content/css")
 </head>
-<body>
-    @RenderBody()
+    <body>
+        <div class="row">
+            <div class="col-md-3 text-right">
+                <nav>
+                    <ul>
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("HTML Helper Example", "HtmlHelper", "Home")</li>
+                    </ul>
+                </nav>
+            </div>
 
-    @RenderSection("scripts", required: false)
-</body>
+            <div class="col-md-9">
+                @RenderBody()
+            </div>
+        </div>
+        @RenderSection("scripts", required: false)
+    </body>
 </html>

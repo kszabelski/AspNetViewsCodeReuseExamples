@@ -9,6 +9,15 @@ header, footer, nav, section {
     display: block;
 }
 
+nav {
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+li {
+    display: block;
+    list-style: none;
+}
 
 /* Styles for basic forms
 -----------------------------------------------------------*/

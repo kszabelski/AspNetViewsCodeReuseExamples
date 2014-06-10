@@ -1,3 +1,18 @@
-﻿@model dynamic
+﻿@using AspNetViewsCodeReuseExamples.Helpers
+
+@model AspNetViewsCodeReuseExamples.ViewModels.HtmlHelperViewModel
 
 <h1>HTML Helper Example</h1>
+
+<h2>Build-in helpers</h2>
+@using (Html.BeginForm())
+{
+    @Html.Label("Name ");
+    @Html.TextBox("name");
+}
+
+<h2>User HTML Helper as extension method</h2>
+@Html.UnorderedList(Model.Planets)
+
+<h2>User HTML Helper as static method</h2>
+@CopyrightsHelper.Copyrights("2014", "Krzysztof Szabelski")

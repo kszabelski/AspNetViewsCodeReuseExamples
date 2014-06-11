@@ -17,6 +17,10 @@ nav li {
     list-style: none;
 }
 
+.userDisplay td {
+    padding: 0 5px
+}
+
 /* Styles for basic forms
 -----------------------------------------------------------*/
 fieldset {

@@ -12,7 +12,8 @@
                 <nav>
                     <ul>
                         <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("HTML Helper Example", "HtmlHelper", "Home")</li>
+                        <li>@Html.ActionLink("HTML Helper examples", "HtmlHelper", "Home")</li>
+                        <li>@Html.ActionLink("Display Templates examples", "DisplayTemplates", "Home")</li>
                     </ul>
                 </nav>
             </div>
@@ -21,6 +22,5 @@
                 @RenderBody()
             </div>
         </div>
-        @RenderSection("scripts", required: false)
     </body>
 </html>

@@ -1,0 +1,6 @@
+﻿@model System.Boolean
+
+<span>
+    <input type="radio" name="yesNo" disabled value="true" @( Model ? "checked" : "")>Yes&nbsp;
+    <input type="radio" name="yesNo" disabled value="false" @( !Model ? "checked" : "")>No
+</span>

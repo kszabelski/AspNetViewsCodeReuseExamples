@@ -1,0 +1,9 @@
+﻿@model AspNetViewsCodeReuseExamples.Models.User
+
+<table class="userDisplay">
+    <tbody>
+        <tr><td>Name</td><td>@Model.Name</td></tr>
+        <tr><td>Surname</td><td>@Model.Surname</td></tr>
+        <tr><td>Birthday</td><td>@Model.Birthday.ToShortDateString()</td></tr>
+    </tbody>
+</table>

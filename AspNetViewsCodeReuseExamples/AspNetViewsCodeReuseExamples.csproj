@@ -133,6 +133,7 @@
     <Compile Include="Helpers\HtmlHelpers.cs" />
     <Compile Include="ViewModels\HtmlHelperViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\PartialViewsViewModel.cs" />
     <Compile Include="ViewModels\RazorHelpersViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +173,8 @@
     <Content Include="Views\Shared\EditorTemplates\Boolean.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\User.cshtml" />
     <Content Include="Views\Home\RazorHelpers.cshtml" />
+    <Content Include="Views\Home\PartialViews.cshtml" />
+    <Content Include="Views\Shared\SpecialUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

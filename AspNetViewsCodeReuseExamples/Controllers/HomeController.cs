@@ -79,5 +79,16 @@ namespace AspNetViewsCodeReuseExamples.Controllers
 
             return View(model);
         }
+
+        public ActionResult PartialViews()
+        {
+            var model = new PartialViewsViewModel
+            {
+                IsSpecialUser = true,
+                User = new User { Name = "Thomas", Surname = "Edison", Birthday = new DateTime(1847, 02, 11) }
+            };
+
+            return View(model);
+        }
     }
 }

@@ -25,6 +25,11 @@ nav li {
     font-size: xx-large;
 }
 
+.specialUser {
+    font-weight: bold;
+    color: green;
+}
+
 /* Styles for basic forms
 -----------------------------------------------------------*/
 fieldset {

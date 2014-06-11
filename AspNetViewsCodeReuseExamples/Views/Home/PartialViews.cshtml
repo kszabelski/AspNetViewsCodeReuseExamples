@@ -1,0 +1,12 @@
+﻿@model AspNetViewsCodeReuseExamples.ViewModels.PartialViewsViewModel
+
+<h2>Partial Views</h2>
+
+@if (Model.IsSpecialUser)
+{
+    Html.RenderPartial("../Shared/SpecialUser", Model.User);
+}
+else
+{
+    @Html.DisplayFor(m => m.User);
+}

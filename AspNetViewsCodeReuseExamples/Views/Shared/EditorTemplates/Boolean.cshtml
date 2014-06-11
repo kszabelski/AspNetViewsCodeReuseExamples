@@ -1,0 +1,12 @@
+﻿@model System.Boolean
+
+@{
+    // Give input name of matching model field, otherwise it cannot be matched with this model when sending response from form.
+    // http://stackoverflow.com/questions/6615541/how-to-get-models-field-name-in-custom-editor-template
+    var modelFieldName = ViewData.TemplateInfo.HtmlFieldPrefix;
+}
+
+<span>
+    <input type="radio" name="@modelFieldName" value="true" @( Model ? "checked" : "")>Yes&nbsp;
+    <input type="radio" name="@modelFieldName" value="false" @( !Model ? "checked" : "")>No
+</span>

@@ -10,8 +10,7 @@ namespace AspNetViewsCodeReuseExamples.Controllers
 {
     public class HomeController : Controller
     {
-        //
-        // GET: /Home/
+        private const string DisplayEditorTemplatesViewModelSessionKey = "DisplayEditorTemplatesViewModel";
 
         public ActionResult Index()
         {
@@ -30,18 +29,41 @@ namespace AspNetViewsCodeReuseExamples.Controllers
 
         public ActionResult DisplayTemplates()
         {
-            var model = new DisplayEditorTemplatesViewModel
-            {
-                AreYouOk = false,
-                User = new User()
-                {
-                    Name = "John",
-                    Surname = "Schmidt",
-                    Birthday = new DateTime(1975, 03, 08)
-                }
-            };
+            var model = GetOrCreateDefaultDisplayEditorTemplatesViewModel();
 
             return View(model);
+        }
+
+        [HttpGet]
+        public ActionResult EditorTemplates()
+        {
+            var model = GetOrCreateDefaultDisplayEditorTemplatesViewModel();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult EditorTemplates(DisplayEditorTemplatesViewModel model)
+        {
+            Session[DisplayEditorTemplatesViewModelSessionKey] = model;
+            return RedirectToAction("DisplayTemplates");
+        }
+
+        private DisplayEditorTemplatesViewModel GetOrCreateDefaultDisplayEditorTemplatesViewModel()
+        {
+            var model = Session[DisplayEditorTemplatesViewModelSessionKey] as DisplayEditorTemplatesViewModel;
+
+            if (model == null)
+            {
+                model = new DisplayEditorTemplatesViewModel
+                {
+                    AreYouOk = false,
+                    User = new User() { Name = "John", Surname = "Schmidt", Birthday = new DateTime(1975, 03, 08) }
+                };
+
+                Session[DisplayEditorTemplatesViewModelSessionKey] = model;
+            }
+
+            return model;
         }
     }
 }

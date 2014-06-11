@@ -1,0 +1,36 @@
+﻿@model AspNetViewsCodeReuseExamples.ViewModels.RazorHelpersViewModel
+
+@helper DisplayTextOrAlternative(string text, string alternative)
+{
+    if (string.IsNullOrEmpty(text))
+    {
+        <text>@alternative</text>
+    }
+    else
+    {
+        <text>@text</text>
+    }
+}
+
+<h2>Razor helpers</h2>
+
+<h3>Local helper</h3>
+<table>
+    <tr>
+        <td>Name</td><td>Surname</td><td>Birthday</td>
+    </tr>
+    
+    @foreach (var user in Model.Users)
+    {
+        <tr>
+            <td>@DisplayTextOrAlternative(user.Name, "--Name missing--")</td>
+            <td>@DisplayTextOrAlternative(user.Surname, "-- Surname missing--")</td>
+            <td>@user.Birthday.ToShortDateString()</td>
+        </tr>
+        
+    }
+</table>
+
+<h3>Global helper</h3>
+
+<span>This is normal text | </span>@RazorHelpers.GrowOnHover("but comes from special helper, so hover it!")

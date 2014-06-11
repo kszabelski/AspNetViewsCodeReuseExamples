@@ -21,6 +21,10 @@ nav li {
     padding: 0 5px
 }
 
+.growOnHover:hover {
+    font-size: xx-large;
+}
+
 /* Styles for basic forms
 -----------------------------------------------------------*/
 fieldset {

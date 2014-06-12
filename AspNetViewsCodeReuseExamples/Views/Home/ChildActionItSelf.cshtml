@@ -1,0 +1,17 @@
+﻿@model AspNetViewsCodeReuseExamples.ViewModels.SearchMovieResultsViewModel
+
+<h2>Search result for query: "@Model.Query "</h2>
+
+@if (string.IsNullOrWhiteSpace(Model.Query) || Model.Movies == null || !Model.Movies.Any())
+{
+    <span>No results</span>
+}
+else
+{
+    <ul>
+        @foreach (var movie in Model.Movies)
+        {
+            <li>@movie.Title - @movie.Description</li>
+        }
+    </ul>
+}

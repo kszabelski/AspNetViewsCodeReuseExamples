@@ -1,7 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetViewsCodeReuseExamples", "AspNetViewsCodeReuseExamples\AspNetViewsCodeReuseExamples.csproj", "{204CDBBD-6F9E-4266-9025-BAAC45D6CC76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdmbAccess", "IdmbAccess\IdmbAccess.csproj", "{310B84AF-AB36-49A4-A186-41CD27D0626C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdmbAccess.Tests", "IdmbAccess.Tests\IdmbAccess.Tests.csproj", "{9D3A0DC7-5E4C-43C7-9C82-F86B72FA3CD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +19,14 @@ Global
 		{204CDBBD-6F9E-4266-9025-BAAC45D6CC76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{204CDBBD-6F9E-4266-9025-BAAC45D6CC76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{204CDBBD-6F9E-4266-9025-BAAC45D6CC76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{310B84AF-AB36-49A4-A186-41CD27D0626C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{310B84AF-AB36-49A4-A186-41CD27D0626C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{310B84AF-AB36-49A4-A186-41CD27D0626C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{310B84AF-AB36-49A4-A186-41CD27D0626C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D3A0DC7-5E4C-43C7-9C82-F86B72FA3CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D3A0DC7-5E4C-43C7-9C82-F86B72FA3CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D3A0DC7-5E4C-43C7-9C82-F86B72FA3CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D3A0DC7-5E4C-43C7-9C82-F86B72FA3CD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

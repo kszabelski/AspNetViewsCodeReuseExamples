@@ -123,6 +123,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="ViewModels\ChildActionViewModel.cs" />
+    <Compile Include="ViewModels\SearchMovieResultsViewModel.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="ViewModels\DisplayEditorTemplatesViewModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -175,6 +177,8 @@
     <Content Include="Views\Home\RazorHelpers.cshtml" />
     <Content Include="Views\Home\PartialViews.cshtml" />
     <Content Include="Views\Shared\SpecialUser.cshtml" />
+    <Content Include="Views\Home\ChildActionUser.cshtml" />
+    <Content Include="Views\Home\ChildActionItSelf.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -184,6 +188,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IdmbAccess\IdmbAccess.csproj">
+      <Project>{310b84af-ab36-49a4-a186-41cd27d0626c}</Project>
+      <Name>IdmbAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

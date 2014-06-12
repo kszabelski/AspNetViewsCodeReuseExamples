@@ -1,13 +1,13 @@
 ﻿@model AspNetViewsCodeReuseExamples.ViewModels.DisplayEditorTemplatesViewModel
 
-<h2>Editor templates examples</h2>
+<h1>Editor templates examples</h1>
 
 @using (Html.BeginForm())
 {
-    <h3>Editor template for Boolean</h3>
+    <h2>Editor template for Boolean</h2>
     @Html.EditorFor(m => m.AreYouOk)
 
-    <h3>Editor template for User class</h3>
+    <h2>Editor template for User class</h2>
     @Html.EditorFor(m => m.User)
 
     <div>

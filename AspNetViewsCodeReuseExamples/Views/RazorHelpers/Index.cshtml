@@ -17,9 +17,11 @@
 <h2>Local helper</h2>
 <table>
     <tr>
-        <td>Name</td><td>Surname</td><td>Birthday</td>
+        <td>Name</td>
+        <td>Surname</td>
+        <td>Birthday</td>
     </tr>
-    
+
     @foreach (var user in Model.Users)
     {
         <tr>
@@ -27,7 +29,7 @@
             <td>@DisplayTextOrAlternative(user.Surname, "-- Surname missing--")</td>
             <td>@user.Birthday.ToShortDateString()</td>
         </tr>
-        
+
     }
 </table>
 

@@ -1,124 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Web;
-using System.Web.Mvc;
-using System.Web.Script.Serialization;
-using AspNetViewsCodeReuseExamples.Models;
-using AspNetViewsCodeReuseExamples.ViewModels;
-using IdmbAccess;
+﻿using System.Web.Mvc;
 
 namespace AspNetViewsCodeReuseExamples.Controllers
 {
     public class HomeController : Controller
     {
-        private const string DisplayEditorTemplatesViewModelSessionKey = "DisplayEditorTemplatesViewModel";
-
         public ActionResult Index()
         {
             return View();
-        }
-
-        public ActionResult HtmlHelper()
-        {
-            var model = new HtmlHelperViewModel
-            {
-                Planets = new List<string>() { "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" }
-            };
-
-            return View(model);
-        }
-
-        public ActionResult DisplayTemplates()
-        {
-            var model = GetOrCreateDefaultDisplayEditorTemplatesViewModel();
-
-            return View(model);
-        }
-
-        [HttpGet]
-        public ActionResult EditorTemplates()
-        {
-            var model = GetOrCreateDefaultDisplayEditorTemplatesViewModel();
-            return View(model);
-        }
-
-        [HttpPost]
-        public ActionResult EditorTemplates(DisplayEditorTemplatesViewModel model)
-        {
-            Session[DisplayEditorTemplatesViewModelSessionKey] = model;
-            return RedirectToAction("DisplayTemplates");
-        }
-
-        private DisplayEditorTemplatesViewModel GetOrCreateDefaultDisplayEditorTemplatesViewModel()
-        {
-            var model = Session[DisplayEditorTemplatesViewModelSessionKey] as DisplayEditorTemplatesViewModel;
-
-            if (model == null)
-            {
-                model = new DisplayEditorTemplatesViewModel
-                {
-                    AreYouOk = false,
-                    User = new User() { Name = "John", Surname = "Schmidt", Birthday = new DateTime(1975, 03, 08) }
-                };
-
-                Session[DisplayEditorTemplatesViewModelSessionKey] = model;
-            }
-
-            return model;
-        }
-
-        public ActionResult RazorHelpers()
-        {
-            var model = new RazorHelpersViewModel
-            {
-                Users = new List<User> {
-                    new User {Name = "Barbara", Birthday = new DateTime(2001, 04, 28)},
-                    new User { Name = "Thomas", Surname = "Edison", Birthday = new DateTime(1847, 02, 11) },
-                    new User {Birthday = new DateTime(1987, 05, 25)}
-                }
-            };
-
-            return View(model);
-        }
-
-        public ActionResult PartialViews()
-        {
-            var model = new PartialViewsViewModel
-            {
-                IsSpecialUser = true,
-                User = new User { Name = "Thomas", Surname = "Edison", Birthday = new DateTime(1847, 02, 11) }
-            };
-
-            return View(model);
-        }
-
-        public ActionResult ChildActionUser(string query = null)
-        {
-            return View(new ChildActionViewModel { Query = query });
-        }
-
-
-        [ChildActionOnly]
-        public ActionResult ChildActionItSelf(string query)
-        {
-            List<Movie> movies = null;
-            if (!string.IsNullOrWhiteSpace(query))
-            {
-                try
-                {
-                    movies = new MovieSearch().SearchPopular(query);
-                }
-                catch
-                {
-                    // For purposes of this sample app just assume there is no results :D
-                }
-            }
-
-            // Return PartialView instead of View to ignore default view layout.
-            return PartialView(new SearchMovieResultsViewModel(query, movies));
         }
     }
 }

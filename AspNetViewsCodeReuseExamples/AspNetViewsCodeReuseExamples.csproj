@@ -123,6 +123,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ChildActionController.cs" />
+    <Compile Include="Controllers\DisplayEditorTemplatesController.cs" />
+    <Compile Include="Controllers\HtmlHelperController.cs" />
+    <Compile Include="Controllers\PartialViewsController.cs" />
+    <Compile Include="Controllers\RazorHelpersController.cs" />
     <Compile Include="ViewModels\ChildActionViewModel.cs" />
     <Compile Include="ViewModels\SearchMovieResultsViewModel.cs" />
     <Compile Include="Models\User.cs" />
@@ -167,18 +172,18 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
-    <Content Include="Views\Home\HtmlHelper.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Boolean.cshtml" />
-    <Content Include="Views\Home\DisplayTemplates.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\User.cshtml" />
-    <Content Include="Views\Home\EditorTemplates.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Boolean.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\User.cshtml" />
-    <Content Include="Views\Home\RazorHelpers.cshtml" />
-    <Content Include="Views\Home\PartialViews.cshtml" />
     <Content Include="Views\Shared\SpecialUser.cshtml" />
-    <Content Include="Views\Home\ChildActionUser.cshtml" />
-    <Content Include="Views\Home\ChildActionItSelf.cshtml" />
+    <Content Include="Views\HtmlHelper\Index.cshtml" />
+    <Content Include="Views\DisplayEditorTemplates\DisplayTemplates.cshtml" />
+    <Content Include="Views\DisplayEditorTemplates\EditorTemplates.cshtml" />
+    <Content Include="Views\PartialViews\Index.cshtml" />
+    <Content Include="Views\RazorHelpers\Index.cshtml" />
+    <Content Include="Views\ChildAction\Index.cshtml" />
+    <Content Include="Views\ChildAction\SearchMovies.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

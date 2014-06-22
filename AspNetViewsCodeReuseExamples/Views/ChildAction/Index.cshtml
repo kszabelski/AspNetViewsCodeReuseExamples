@@ -12,5 +12,5 @@
 </div>
 
 <div>
-    @{ Html.RenderAction("SearchMovies", "ChildAction", new { query = Model.Query }); }
+    @Html.Action("SearchMovies", "ChildAction", new { query = Model.Query })
 </div>

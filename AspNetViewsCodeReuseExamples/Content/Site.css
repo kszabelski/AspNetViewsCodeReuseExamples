@@ -30,6 +30,18 @@ nav li {
     color: green;
 }
 
+.movieTitle {
+    font-weight: bold;
+}
+
+.movieContainer {
+    width: 500px;
+}
+
+.specialMovie {
+    background-color: #0fffff;
+}
+
 /* Styles for basic forms
 -----------------------------------------------------------*/
 fieldset {

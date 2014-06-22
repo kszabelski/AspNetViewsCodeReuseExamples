@@ -8,3 +8,9 @@
 
 <h2>Display template for User class</h2>
 @Html.DisplayFor(m => m.User)
+
+<h2>Local default display template for Movie class</h2>
+@Html.DisplayFor(m => m.Movie)
+
+<h2>Local not default display template for Movie class</h2>
+@Html.DisplayFor(m => m.SpecialMovie, "SpecialMovie")

@@ -186,6 +186,10 @@
     <Content Include="Views\RazorHelpers\Index.cshtml" />
     <Content Include="Views\ChildAction\Index.cshtml" />
     <Content Include="Views\ChildAction\SearchMovies.cshtml" />
+    <Content Include="Views\DisplayEditorTemplates\DisplayTemplates\Movie.cshtml" />
+    <Content Include="Views\DisplayEditorTemplates\EditorTemplates\Movie.cshtml" />
+    <Content Include="Views\DisplayEditorTemplates\DisplayTemplates\SpecialMovie.cshtml" />
+    <Content Include="Views\DisplayEditorTemplates\EditorTemplates\SpecialMovie.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

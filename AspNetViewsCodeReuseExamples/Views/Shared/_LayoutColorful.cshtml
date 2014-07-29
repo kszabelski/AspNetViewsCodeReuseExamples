@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Code Reuse in ASP.NET Views - Examples</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body class="colorfulBody">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="flatNavigation topBar">
+                <nav>
+                    @Html.Partial("Navigation")
+                </nav>
+                <div class="clear"></div>
+            </div>
+            <div class="content">
+                @RenderBody()
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</body>
+</html>

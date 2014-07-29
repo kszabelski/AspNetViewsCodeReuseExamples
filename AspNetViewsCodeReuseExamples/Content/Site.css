@@ -91,3 +91,30 @@ textarea {
 .validation-summary-valid {
     display: none;
 }
+
+.flatNavigation li {
+    display: inline;
+    float: left;
+    margin-right: 25px;
+}
+
+.flatNavigation a {
+    color: #000;
+}
+
+.clear {
+    clear: both;
+}
+
+.topBar {
+    background-color: #0066FF;
+}
+
+.content {
+    background-color: #FF9900;
+    height: 100%;
+}
+
+.colorfulBody {
+    background-color: #FF0000;
+}

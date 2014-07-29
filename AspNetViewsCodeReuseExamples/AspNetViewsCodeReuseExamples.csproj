@@ -128,6 +128,7 @@
     <Compile Include="Controllers\ChildActionController.cs" />
     <Compile Include="Controllers\DisplayEditorTemplatesController.cs" />
     <Compile Include="Controllers\HtmlHelperController.cs" />
+    <Compile Include="Controllers\LayoutsController.cs" />
     <Compile Include="Controllers\PartialViewsController.cs" />
     <Compile Include="Controllers\RazorHelpersController.cs" />
     <Compile Include="ViewModels\ChildActionViewModel.cs" />
@@ -190,6 +191,9 @@
     <Content Include="Views\DisplayEditorTemplates\EditorTemplates\Movie.cshtml" />
     <Content Include="Views\DisplayEditorTemplates\DisplayTemplates\SpecialMovie.cshtml" />
     <Content Include="Views\DisplayEditorTemplates\EditorTemplates\SpecialMovie.cshtml" />
+    <Content Include="Views\Layouts\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutColorful.cshtml" />
+    <Content Include="Views\Shared\Navigation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

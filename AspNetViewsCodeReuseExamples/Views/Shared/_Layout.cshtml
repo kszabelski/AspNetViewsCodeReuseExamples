@@ -6,25 +6,17 @@
     <title>Code Reuse in ASP.NET Views - Examples</title>
     @Styles.Render("~/Content/css")
 </head>
-    <body>
-        <div class="row">
-            <div class="col-md-3 text-right">
-                <nav>
-                    <ul>
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("HTML Helper examples", "Index", "HtmlHelper")</li>
-                        <li>@Html.ActionLink("Display Templates examples", "DisplayTemplates", "DisplayEditorTemplates")</li>
-                        <li>@Html.ActionLink("Editor Templates examples", "EditorTemplates", "DisplayEditorTemplates")</li>
-                        <li>@Html.ActionLink("Razor Helpers examples", "Index", "RazorHelpers")</li>
-                        <li>@Html.ActionLink("Partial Views example", "Index", "PartialViews")</li>
-                        <li>@Html.ActionLink("Child Action example", "Index", "ChildAction")</li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="col-md-9">
-                @RenderBody()
-            </div>
+<body>
+    <div class="row">
+        <div class="col-md-3 text-right">
+            <nav>
+                @Html.Partial("Navigation")
+            </nav>
         </div>
-    </body>
+
+        <div class="col-md-9">
+            @RenderBody()
+        </div>
+    </div>
+</body>
 </html>

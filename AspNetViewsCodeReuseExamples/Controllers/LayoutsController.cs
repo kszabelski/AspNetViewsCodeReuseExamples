@@ -13,5 +13,9 @@ namespace AspNetViewsCodeReuseExamples.Controllers
             return View();
         }
 
+        public ActionResult Nested()
+        {
+            return View();
+        }
     }
 }

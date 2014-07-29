@@ -194,6 +194,8 @@
     <Content Include="Views\Layouts\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutColorful.cshtml" />
     <Content Include="Views\Shared\Navigation.cshtml" />
+    <Content Include="Views\Shared\_LayoutNested.cshtml" />
+    <Content Include="Views\Layouts\Nested.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

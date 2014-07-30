@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace IdmbAccess
+namespace AspNetViewsCodeReuseExamples.IdmbComponent
 {
     public class MovieSearch
     {

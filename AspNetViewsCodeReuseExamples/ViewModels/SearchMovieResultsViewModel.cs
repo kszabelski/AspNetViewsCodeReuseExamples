@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using IdmbAccess;
+using AspNetViewsCodeReuseExamples.IdmbComponent;
 
 namespace AspNetViewsCodeReuseExamples.ViewModels
 {

@@ -131,6 +131,12 @@
     <Compile Include="Controllers\LayoutsController.cs" />
     <Compile Include="Controllers\PartialViewsController.cs" />
     <Compile Include="Controllers\RazorHelpersController.cs" />
+    <Compile Include="IdmbComponent\IdmbAccess.cs" />
+    <Compile Include="IdmbComponent\IdmbResult.cs" />
+    <Compile Include="IdmbComponent\IIdmbAccess.cs" />
+    <Compile Include="IdmbComponent\Movie.cs" />
+    <Compile Include="IdmbComponent\MovieSearch.cs" />
+    <Compile Include="IdmbComponent\TitlePopular.cs" />
     <Compile Include="ViewModels\ChildActionViewModel.cs" />
     <Compile Include="ViewModels\SearchMovieResultsViewModel.cs" />
     <Compile Include="Models\User.cs" />
@@ -205,12 +211,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\IdmbAccess\IdmbAccess.csproj">
-      <Project>{310b84af-ab36-49a4-a186-41cd27d0626c}</Project>
-      <Name>IdmbAccess</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

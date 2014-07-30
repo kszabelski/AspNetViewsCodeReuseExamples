@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
+using AspNetViewsCodeReuseExamples.IdmbComponent;
 using AspNetViewsCodeReuseExamples.ViewModels;
-using IdmbAccess;
 
 namespace AspNetViewsCodeReuseExamples.Controllers
 {

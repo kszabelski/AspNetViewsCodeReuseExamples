@@ -1,5 +1,5 @@
-﻿using AspNetViewsCodeReuseExamples.Models;
-using IdmbAccess;
+﻿using AspNetViewsCodeReuseExamples.IdmbComponent;
+using AspNetViewsCodeReuseExamples.Models;
 
 namespace AspNetViewsCodeReuseExamples.ViewModels
 {

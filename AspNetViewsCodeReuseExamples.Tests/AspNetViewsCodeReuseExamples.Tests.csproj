@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D3A0DC7-5E4C-43C7-9C82-F86B72FA3CD0}</ProjectGuid>
+    <ProjectGuid>{CEE6B8C3-DB75-45C0-9CC5-4CDEF033F302}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IdmbAccess.Tests</RootNamespace>
-    <AssemblyName>IdmbAccess.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>AspNetViewsCodeReuseExamples.Tests</RootNamespace>
+    <AssemblyName>AspNetViewsCodeReuseExamples.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
@@ -48,18 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IdmbAccessTests.cs" />
-    <Compile Include="MovieSearchTests.cs" />
+    <Compile Include="IdmbComponent\IdmbAccessTests.cs" />
+    <Compile Include="IdmbComponent\MovieSearchTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\AspNetViewsCodeReuseExamples\AspNetViewsCodeReuseExamples.csproj">
+      <Project>{204cdbbd-6f9e-4266-9025-baac45d6cc76}</Project>
+      <Name>AspNetViewsCodeReuseExamples</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\IdmbAccess\IdmbAccess.csproj">
-      <Project>{310B84AF-AB36-49A4-A186-41CD27D0626C}</Project>
-      <Name>IdmbAccess</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

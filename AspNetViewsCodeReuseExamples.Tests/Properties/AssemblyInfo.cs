@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("IdmbAccess.Tests")]
+[assembly: AssemblyTitle("AspNetViewsCodeReuseExamples.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("IdmbAccess.Tests")]
+[assembly: AssemblyProduct("AspNetViewsCodeReuseExamples.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("44d3dc11-a1d2-4892-a878-c8a2c58c4106")]
+[assembly: Guid("9c660089-382e-45ce-8b17-fac4a058cb8a")]
 
 // Version information for an assembly consists of the following four values:
 //

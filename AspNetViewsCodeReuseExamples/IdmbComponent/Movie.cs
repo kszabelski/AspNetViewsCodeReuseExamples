@@ -1,4 +1,4 @@
-﻿namespace IdmbAccess
+﻿namespace AspNetViewsCodeReuseExamples.IdmbComponent
 {
     public class Movie
     {

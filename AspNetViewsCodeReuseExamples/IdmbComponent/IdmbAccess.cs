@@ -2,7 +2,7 @@
 using System.Text;
 using System.Web.Script.Serialization;
 
-namespace IdmbAccess
+namespace AspNetViewsCodeReuseExamples.IdmbComponent
 {
     public class IdmbAccess : IIdmbAccess
     {

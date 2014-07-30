@@ -4,9 +4,9 @@
 
 @if (Model.IsSpecialUser)
 {
-    @Html.Partial("../Shared/SpecialUser", Model.User);
+    @Html.Partial("../Shared/SpecialUser", Model.User)
 }
 else
 {
-    @Html.DisplayFor(m => m.User);
+    @Html.DisplayFor(m => m.User)
 }

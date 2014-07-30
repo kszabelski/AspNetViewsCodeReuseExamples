@@ -10,7 +10,7 @@ namespace AspNetViewsCodeReuseExamples.Controllers
         {
             var model = new HtmlHelperViewModel
             {
-                Planets = new List<string>() { "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" }
+                Planets = new List<string> { "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" }
             };
 
             return View(model);

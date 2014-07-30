@@ -14,9 +14,8 @@ namespace AspNetViewsCodeReuseExamples.IdmbComponent
 
         private static string GetResponse(string query)
         {
-            var baseAddress = "http://www.imdb.com/xml/find?json=1&nr=1&tt=on&q=";
-            var wb = new WebClient();
-            wb.Encoding = Encoding.UTF8;
+            const string baseAddress = "http://www.imdb.com/xml/find?json=1&nr=1&tt=on&q=";
+            var wb = new WebClient { Encoding = Encoding.UTF8 };
             return wb.DownloadString(baseAddress + query);
         }
 
